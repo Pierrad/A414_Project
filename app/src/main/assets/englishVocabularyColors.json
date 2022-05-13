@@ -1,0 +1,38 @@
+[
+    {
+        "word" : "bleu",
+        "rightAnswer" : "blue"
+    },
+    {
+        "word" : "blanc",
+        "rightAnswer" : "white"
+    },
+    {
+        "word" : "jaune",
+        "rightAnswer" : "yellow"
+    },
+    {
+        "word" : "noir",
+        "rightAnswer" : "black"
+    },
+    {
+        "word" : "gris",
+        "rightAnswer" : "grey"
+    },
+    {
+        "word" : "rose",
+        "rightAnswer" : "pink"
+    },
+    {
+        "word" : "vert",
+        "rightAnswer" : "green"
+    },
+    {
+        "word" : "violet",
+        "rightAnswer" : "purple"
+    },
+    {
+        "word" : "rouge",
+        "rightAnswer" : "red"
+    }
+]

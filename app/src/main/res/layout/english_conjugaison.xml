@@ -25,7 +25,8 @@
             android:ems="10"
             android:gravity="center"
             android:hint="Votre réponse"
-            android:inputType="textPersonName|textCapWords" />
+            android:inputType="textPersonName|textCapWords"
+            android:minHeight="48dp" />
 
         <LinearLayout
             android:layout_width="match_parent"

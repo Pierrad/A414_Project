@@ -1,0 +1,52 @@
+[
+    {
+        "word" : "boy",
+        "answers" : ["garçon", "fille", "homme"],
+        "rightAnswer" : "garçon"
+    },
+    {
+        "word" : "city",
+        "answers" : ["ville", "pays", "citoyen"],
+        "rightAnswer" : "ville"
+    },
+    {
+        "word" : "livre",
+        "answers" : ["book", "paper", "notebook"],
+        "rightAnswer" : "book"
+    },
+    {
+        "word" : "maison",
+        "answers" : ["house", "garden", "school"],
+        "rightAnswer" : "house"
+    },
+    {
+        "word" : "merci",
+        "answers" : ["thank you", "they", "excuse me"],
+        "rightAnswer" : "thank you"
+    },
+    {
+        "word" : "teacher",
+        "answers" : ["professeur", "parent", "directeur"],
+        "rightAnswer" : "professeur"
+    },
+    {
+        "word" : "sometimes",
+        "answers" : ["parfois", "souvent", "jamais"],
+        "rightAnswer" : "parfois"
+    },
+    {
+        "word" : "sorry",
+        "answers" : ["pardon", "souris", "sourire"],
+        "rightAnswer" : "pardon"
+    },
+    {
+        "word" : "souvent",
+        "answers" : ["often", "sometimes", "never"],
+        "rightAnswer" : "often"
+    },
+    {
+        "word" : "s'il-vous-plaît",
+        "answers" : ["please", "welcome", "pleasant"],
+        "rightAnswer" : "please"
+    }
+]

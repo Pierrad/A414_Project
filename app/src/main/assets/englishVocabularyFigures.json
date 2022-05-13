@@ -1,0 +1,42 @@
+[
+    {
+        "word" : "un",
+        "rightAnswer" : "one"
+    },
+    {
+        "word" : "deux",
+        "rightAnswer" : "two"
+    },
+    {
+        "word" : "trois",
+        "rightAnswer" : "three"
+    },
+    {
+        "word" : "quatre",
+        "rightAnswer" : "four"
+    },
+    {
+        "word" : "cinq",
+        "rightAnswer" : "five"
+    },
+    {
+        "word" : "six",
+        "rightAnswer" : "six"
+    },
+    {
+        "word" : "sept",
+        "rightAnswer" : "seven"
+    },
+    {
+        "word" : "huit",
+        "rightAnswer" : "eight"
+    },
+    {
+        "word" : "neuf",
+        "rightAnswer" : "nine"
+    },
+    {
+        "word" : "dix",
+        "rightAnswer" : "ten"
+    }
+]
