@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/purple_200"
@@ -50,17 +51,17 @@
 
 
         <ImageView
+            android:id="@+id/bt_rew"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_fast_rewind" />
+
+        <ImageView
             android:id="@+id/bt_pause"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:src="@drawable/ic_pause"
             android:visibility="gone" />
-
-        <ImageView
-            android:id="@+id/bt_rew"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:src="@drawable/ic_fast_rewind" />
 
         <ImageView
             android:id="@+id/bt_play"
@@ -74,6 +75,28 @@
             android:layout_height="40dp"
             android:src="@drawable/ic_fast_forward" />
     </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+        <EditText
+            android:id="@+id/dictee"
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_weight=".70"
+            android:background="@drawable/rounded_edittext"
+            android:gravity="top"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+
+    </LinearLayout>
+
 
 </LinearLayout>
 
