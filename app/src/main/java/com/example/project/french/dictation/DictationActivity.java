@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.text.InputType;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.SeekBar;
@@ -22,12 +23,13 @@ import java.util.concurrent.TimeUnit;
 
 public class DictationActivity extends AppCompatActivity {
 
-    TextView playerPosition, playerDuration;
+    TextView playerPosition, playerDuration,corriger;
     SeekBar seekBar;
     ImageView btRew, btPlay, btPause, btFf;
     MediaPlayer mediaPlayer;
     Handler handler = new Handler();
     Runnable runnable;
+    Button btn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,10 +44,10 @@ public class DictationActivity extends AppCompatActivity {
         btPlay = findViewById(R.id.bt_play);
         btPause = findViewById(R.id.bt_pause);
         btFf = findViewById(R.id.bt_ff);
+        corriger = findViewById(R.id.corriger);
+        btn = findViewById(R.id.buttonCorrection);
 
         mediaPlayer = MediaPlayer.create(this,R.raw.dictee1);
-
-
 
         runnable = new Runnable() {
             @Override
@@ -129,6 +131,15 @@ public class DictationActivity extends AppCompatActivity {
             @Override
             public void onStopTrackingTouch(SeekBar seekBar) {
 
+            }
+        });
+
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                corriger.setText("voici le corrigé voici le corrigé voici le corrigé voici " +
+                        "le corrigé " + "voici le corrigé voici le corrigé voici le corrigé " +
+                        "voici le corrigé voici " + "le corrigé voici le corrigé");
             }
         });
 

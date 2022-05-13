@@ -97,6 +97,39 @@
 
     </LinearLayout>
 
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+        <Button
+            android:id="@+id/buttonCorrection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="afficherCorrection"
+            android:text="Corriger"
+            android:layout_marginTop="30dp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+    <TextView
+        android:id="@+id/corriger"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text=""
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_gravity="center"
+        android:textColor="@android:color/black" />
+    </LinearLayout>
 
 </LinearLayout>
 
