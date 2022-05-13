@@ -12,32 +12,39 @@
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/textViewQuestion"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/dashboard_name"
             tools:ignore="MissingConstraints" />
 
-        <Button
-            android:id="@+id/button"
+        <EditText
+            android:id="@+id/editTextAnswer"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:onClick="redirectToVocabulary"
-            android:text="Vocabulaire" />
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Votre réponse"
+            android:inputType="textPersonName|textCapWords" />
 
-        <Button
-            android:id="@+id/button2"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:onClick="redirectToConjugaison"
-            android:text="Conjugaison" />
+            android:gravity="center"
+            android:orientation="horizontal">
 
-        <Button
-            android:id="@+id/button3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="redirectToOralComprehension"
-            android:text="Compréhension orale" />
+            <Button
+                android:id="@+id/buttonSubmit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ok" />
+
+            <Button
+                android:id="@+id/buttonNext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Next" />
+        </LinearLayout>
 
     </LinearLayout>
 

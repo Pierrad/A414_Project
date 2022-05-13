@@ -22,23 +22,22 @@
             android:id="@+id/button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:onClick="redirectToVocabulary"
-            android:text="Vocabulaire" />
+            android:onClick="redirectToWordsTranslation"
+            android:text="Donne le bon mot !" />
 
         <Button
             android:id="@+id/button2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:onClick="redirectToConjugaison"
-            android:text="Conjugaison" />
+            android:onClick="redirectToColorsTranslation"
+            android:text="Donne la bonne couleur !" />
 
         <Button
             android:id="@+id/button3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:onClick="redirectToOralComprehension"
-            android:text="Compréhension orale" />
-
+            android:onClick="redirectToFiguresTranslation"
+            android:text="Donne le bon chiffre !" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

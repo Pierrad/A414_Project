@@ -23,6 +23,9 @@
         <activity android:name=".french.FrenchDashboardActivity" />
         <activity android:name=".history.HistoryDashboardActivity" />
         <activity android:name=".maths.MathsDashboardActivity" />
+        <activity android:name=".english.VocabularyDashboardActivity" />
+        <activity android:name=".english.ConjugaisonActivity" />
+        <activity android:name=".english.OralComprehensionActivity" />
     </application>
 
 </manifest>
