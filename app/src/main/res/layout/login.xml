@@ -18,9 +18,63 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:text="Bienvenue "
-            android:textColor="#F44336"
+            android:textColor="#3F51B5"
             android:textSize="34sp"
             android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:onClick="swipeLeft"
+                app:srcCompat="@mipmap/chevron_left" />
+
+            <ImageView
+                android:id="@+id/avatarImg"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:onClick="swipeRight"
+                android:rotation="180"
+                app:srcCompat="@mipmap/chevron_left" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/pseudoInput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:ems="10"
+            android:hint="Votre pseudo...."
+            android:inputType="textPersonName"
+            android:minHeight="48dp" />
+
+        <Button
+            android:id="@+id/submitLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:onClick="submit"
+            android:text="Continuer" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

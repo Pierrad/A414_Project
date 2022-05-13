@@ -10,16 +10,17 @@ import com.example.project.english.EnglishDashboardActivity;
 import com.example.project.french.FrenchDashboardActivity;
 import com.example.project.history.HistoryDashboardActivity;
 import com.example.project.maths.MathsDashboardActivity;
+import com.example.project.user.User;
 
 import java.util.Objects;
 
 public class DashboardActivity extends AppCompatActivity {
-
+    private User user = User.getInstance(this);
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.dashboard);
-        Objects.requireNonNull(getSupportActionBar()).setTitle("Dashboard");
+        Objects.requireNonNull(getSupportActionBar()).setTitle("Dashboard - " + user.getPseudo());
     }
 
     public void redirectToEnglish(View v) {
