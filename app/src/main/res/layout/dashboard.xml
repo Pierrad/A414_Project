@@ -10,40 +10,114 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/dashboard_name"
-            tools:ignore="MissingConstraints" />
-
-        <Button
-            android:id="@+id/button"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:onClick="redirectToEnglish"
-            android:text="Matière Anglais" />
+            android:orientation="vertical">
 
-        <Button
-            android:id="@+id/button2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="redirectToFrench"
-            android:text="Matière français" />
+            <ImageView
+                android:id="@+id/avatar"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                app:srcCompat="@mipmap/picture1" />
 
-        <Button
-            android:id="@+id/button3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="redirectToHistory"
-            android:text="Matière Histoire" />
+            <TextView
+                android:id="@+id/dashboardTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:textSize="24sp"
+                tools:ignore="MissingConstraints"
+                android:fontFamily="@font/poppins" />
 
-        <Button
-            android:id="@+id/button4"
+        </LinearLayout>
+
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="redirectToMaths"
-            android:text="Matière Maths" />
+            android:layout_height="match_parent"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#ED6565"
+                    android:elevation="10dp"
+                    android:onClick="redirectToFrench"
+                    android:paddingTop="50dp"
+                    android:paddingBottom="50dp"
+                    android:text="Français"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/poppins" />
+
+                <Button
+                    android:id="@+id/button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#F3C745"
+                    android:elevation="10dp"
+                    android:onClick="redirectToEnglish"
+                    android:paddingTop="50dp"
+                    android:paddingBottom="50dp"
+                    android:text="Anglais"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/poppins" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#659CFA"
+                    android:elevation="10dp"
+                    android:onClick="redirectToHistory"
+                    android:paddingTop="50dp"
+                    android:paddingBottom="50dp"
+                    android:text="Histoire"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/poppins"/>
+
+                <Button
+                    android:id="@+id/button4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#55E65B"
+                    android:elevation="10dp"
+                    android:onClick="redirectToMaths"
+                    android:paddingTop="50dp"
+                    android:paddingBottom="50dp"
+                    android:text="Maths"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/poppins" />
+            </LinearLayout>
+
+        </LinearLayout>
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -26,7 +26,7 @@ public class LoginActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.login);
-        Objects.requireNonNull(getSupportActionBar()).setTitle("Login");
+        Objects.requireNonNull(getSupportActionBar()).setTitle("Bienvenue 😁");
         initAvatarList();
         registerElements();
     }
