@@ -23,6 +23,7 @@
         <activity android:name=".french.FrenchDashboardActivity" />
         <activity android:name=".history.HistoryDashboardActivity" />
         <activity android:name=".maths.MathsDashboardActivity" />
+        <activity android:name=".french.dictation.DictationActivity" />
     </application>
 
 </manifest>
