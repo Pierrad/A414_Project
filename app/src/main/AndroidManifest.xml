@@ -22,8 +22,11 @@
         <activity android:name=".LoginActivity" />
         <activity android:name=".english.EnglishDashboardActivity" />
         <activity android:name=".french.FrenchDashboardActivity" />
-        <activity android:name=".history.HistoryDashboardActivity" />
         <activity android:name=".maths.MathsDashboardActivity" />
+
+        <activity android:name=".history.HistoryDashboardActivity" />
+        <activity android:name=".history.activities.QuizzActivity" />
+        <activity android:name=".history.activities.ResultActivity" />
     </application>
 
 </manifest>

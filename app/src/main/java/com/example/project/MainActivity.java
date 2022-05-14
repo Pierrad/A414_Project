@@ -14,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        if (!hasAccount()) {
+        if (hasAccount()) {
             User.getInstance(this);
             Intent intent = new Intent(this, DashboardActivity.class);
             this.startActivity(intent);
