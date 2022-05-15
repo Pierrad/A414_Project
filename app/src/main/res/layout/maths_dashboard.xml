@@ -13,7 +13,7 @@
 
         <Space
             android:layout_width="match_parent"
-            android:layout_height="50dp" />
+            android:layout_height="20dp" />
 
         <TextView
             android:id="@+id/textView3"
@@ -25,18 +25,19 @@
 
         <Space
             android:layout_width="match_parent"
-            android:layout_height="50dp" />
+            android:layout_height="20dp" />
 
         <TextView
             android:id="@+id/textView5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
-            android:text="TextView" />
+            android:text="TextView"
+            android:textSize="20sp" />
 
         <Space
             android:layout_width="match_parent"
-            android:layout_height="50dp" />
+            android:layout_height="20dp" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -53,6 +54,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:ems="2"
+                android:gravity="center_horizontal"
                 android:inputType="textPersonName" />
 
             <EditText
@@ -60,6 +62,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:ems="2"
+                android:gravity="center_horizontal"
                 android:inputType="textPersonName" />
 
             <EditText
@@ -67,6 +70,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:ems="2"
+                android:gravity="center_horizontal"
                 android:inputType="textPersonName" />
 
             <EditText
@@ -74,6 +78,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:ems="2"
+                android:gravity="center_horizontal"
                 android:inputType="textPersonName" />
 
             <EditText
@@ -81,6 +86,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:ems="2"
+                android:gravity="center_horizontal"
                 android:inputType="textPersonName" />
 
             <Space
@@ -108,6 +114,7 @@
                 android:id="@+id/buttonPlus"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
+                android:onClick="operatorButtonClick"
                 android:text="+" />
 
             <Space
@@ -119,6 +126,7 @@
                 android:id="@+id/buttonMinus"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
+                android:onClick="operatorButtonClick"
                 android:text="-" />
 
             <Space
@@ -131,6 +139,7 @@
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:backgroundTint="#959595"
+                android:onClick="operatorButtonClick"
                 android:text="*" />
 
             <Space
@@ -158,6 +167,7 @@
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:layout_weight="0"
+                android:onClick="numberButtonClick"
                 android:text="1" />
 
             <Space
@@ -169,6 +179,7 @@
                 android:id="@+id/buttonNumberTwo"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
+                android:onClick="numberButtonClick"
                 android:text="1" />
 
             <Space
@@ -181,6 +192,7 @@
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:layout_weight="0"
+                android:onClick="numberButtonClick"
                 android:text="1" />
 
             <Space
@@ -208,6 +220,7 @@
                 android:id="@+id/buttonNumberFour"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
+                android:onClick="numberButtonClick"
                 android:text="1" />
 
             <Space
@@ -219,6 +232,7 @@
                 android:id="@+id/buttonNumberFive"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
+                android:onClick="numberButtonClick"
                 android:text="1" />
 
             <Space
@@ -230,6 +244,7 @@
                 android:id="@+id/buttonNumberSix"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
+                android:onClick="numberButtonClick"
                 android:text="1" />
 
             <Space
@@ -254,16 +269,35 @@
                 android:layout_weight="1" />
 
             <Button
-                android:id="@+id/button12"
+                android:id="@+id/buttonCancel"
                 android:layout_width="wrap_content"
                 android:layout_height="50dp"
-                android:onClick="logContent"
+                android:onClick="cancelButtonClick"
                 android:text="CANCEL" />
 
             <Space
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/buttonReset"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:onClick="reset"
+                android:text="NEXT" />
         </LinearLayout>
 
     </LinearLayout>
