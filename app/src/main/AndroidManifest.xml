@@ -27,6 +27,9 @@
         <activity android:name=".history.HistoryDashboardActivity" />
         <activity android:name=".history.activities.QuizzActivity" />
         <activity android:name=".history.activities.ResultActivity" />
+
+        <activity android:name=".notification.NotificationActivity" />
+        <receiver android:name=".notification.AlarmReceiver" />
     </application>
 
 </manifest>
