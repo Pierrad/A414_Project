@@ -1,4 +1,10 @@
 <resources>
     <string name="app_name">Project</string>
     <string name="dashboard_name">Le dashboard</string>
+    <string name="quizz_entry_title">Question %1$s / %2$s</string>
+    <string name="quizz_results_bad">Dommage</string>
+    <string name="quizz_results_okay">Pas mal !</string>
+    <string name="quizz_results_good">Bien !</string>
+    <string name="quizz_results_very_good">Félicitations 🎉</string>
+    <string name="quizz_results_score">%1$s / %2$s</string>
 </resources>
