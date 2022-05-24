@@ -37,7 +37,7 @@ public class DashboardActivity extends AppCompatActivity {
         pseudo = findViewById(R.id.dashboardTitle);
 
         avatar.setImageResource(user.getAvatar());
-        pseudo.setText(user.getPseudo());
+        pseudo.setText(user.getPseudo() + " - Niveau " + user.getLevel());
     }
 
     public void redirectToEnglish(View v) {

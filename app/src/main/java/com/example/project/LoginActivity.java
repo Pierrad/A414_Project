@@ -72,6 +72,7 @@ public class LoginActivity extends AppCompatActivity {
             SharedPreferences.Editor myEdit = sharedPreferences.edit();
             myEdit.putString("pseudo", pseudo);
             myEdit.putInt("avatar", avatarList.get(avatarIndex));
+            myEdit.putInt("experience", 0);
             if (myEdit.commit()) {
                 User.getInstance(this);
                 Intent intent = new Intent(this, DashboardActivity.class);
