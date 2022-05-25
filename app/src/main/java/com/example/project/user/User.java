@@ -76,6 +76,10 @@ public class User {
         }
     }
 
+    public int getBadge() {
+        return badge;
+    }
+    /**
     public void setBadge(int value) {
         this.badge = value;
     }
@@ -99,10 +103,10 @@ public class User {
                 break;
         }
     }
-
+**/
     public void setLevelAndBadge() {
         setLevel();
-        setBadge();
+        // setBadge();
     }
 
     public void editSharedPreferences() {

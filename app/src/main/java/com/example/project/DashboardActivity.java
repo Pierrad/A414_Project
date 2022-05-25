@@ -9,6 +9,7 @@ import android.util.TypedValue;
 import android.view.Gravity;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.example.project.english.EnglishDashboardActivity;
@@ -21,6 +22,7 @@ import java.util.Objects;
 
 public class DashboardActivity extends AppCompatActivity {
     private User user = User.getInstance(this);
+    private LinearLayout avatarBox;
     private ImageView avatar;
     private TextView pseudo;
 
@@ -35,9 +37,11 @@ public class DashboardActivity extends AppCompatActivity {
     public void registerElements() {
         avatar = findViewById(R.id.avatar);
         pseudo = findViewById(R.id.dashboardTitle);
+        avatarBox = findViewById(R.id.avatarBox);
 
         avatar.setImageResource(user.getAvatar());
         pseudo.setText(user.getPseudo() + " - Niveau " + user.getLevel());
+        avatarBox.setBackground(getResources().getDrawable(user.getBadge()));
     }
 
     public void redirectToEnglish(View v) {

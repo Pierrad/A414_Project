@@ -59,7 +59,7 @@
                     android:onClick="redirectToFrench"
                     android:paddingTop="50dp"
                     android:paddingBottom="50dp"
-                    android:text="Français"
+                    android:text="@string/fran_ais"
                     android:textStyle="bold"
                     android:fontFamily="@font/poppins" />
 
@@ -74,7 +74,7 @@
                     android:onClick="redirectToEnglish"
                     android:paddingTop="50dp"
                     android:paddingBottom="50dp"
-                    android:text="Anglais"
+                    android:text="@string/anglais"
                     android:textStyle="bold"
                     android:fontFamily="@font/poppins" />
             </LinearLayout>
@@ -97,7 +97,7 @@
                     android:onClick="redirectToHistory"
                     android:paddingTop="50dp"
                     android:paddingBottom="50dp"
-                    android:text="Histoire"
+                    android:text="@string/histoire"
                     android:textStyle="bold"
                     android:fontFamily="@font/poppins"/>
 
@@ -112,7 +112,7 @@
                     android:onClick="redirectToMaths"
                     android:paddingTop="50dp"
                     android:paddingBottom="50dp"
-                    android:text="Maths"
+                    android:text="@string/maths"
                     android:textStyle="bold"
                     android:fontFamily="@font/poppins" />
             </LinearLayout>
