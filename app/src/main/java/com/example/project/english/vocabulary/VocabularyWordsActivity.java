@@ -114,6 +114,7 @@ public class VocabularyWordsActivity extends AppCompatActivity {
                 for (int j=0; j<possibleAnswersJSON.length(); j++) {
                     possibleAnswers.add(possibleAnswersJSON.getString(j));
                 }
+                Collections.shuffle(possibleAnswers);
                 quizzEntries.add(new QuizzEntryMultiple(question, answer, possibleAnswers));
             }
         } catch (JSONException e) {
