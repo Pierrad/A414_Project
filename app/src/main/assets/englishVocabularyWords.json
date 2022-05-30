@@ -1,52 +1,62 @@
 [
     {
-        "word" : "boy",
-        "answers" : ["garçon", "fille", "homme"],
-        "rightAnswer" : "garçon"
+        "category": "word",
+        "question" : "boy",
+        "answer" : "garçon",
+        "possibleAnswers" : ["garçon", "fille", "homme"]
     },
     {
-        "word" : "city",
-        "answers" : ["ville", "pays", "citoyen"],
-        "rightAnswer" : "ville"
+        "category": "word",
+        "question" : "city",
+        "answer" : "ville",
+        "possibleAnswers" : ["ville", "pays", "citoyen"]
     },
     {
-        "word" : "livre",
-        "answers" : ["book", "paper", "notebook"],
-        "rightAnswer" : "book"
+        "category": "word",
+        "question" : "livre",
+        "answer" : "book",
+        "possibleAnswers" : ["book", "paper", "notebook"]
     },
     {
-        "word" : "maison",
-        "answers" : ["house", "garden", "school"],
-        "rightAnswer" : "house"
+        "category": "word",
+        "question" : "maison",
+        "answer" : "house",
+        "possibleAnswers" : ["house", "garden", "school"]
     },
     {
-        "word" : "merci",
-        "answers" : ["thank you", "they", "excuse me"],
-        "rightAnswer" : "thank you"
+        "category": "word",
+        "question" : "merci",
+        "answer" : "thank you",
+        "possibleAnswers" : ["thank you", "they", "excuse me"]
     },
     {
-        "word" : "teacher",
-        "answers" : ["professeur", "parent", "directeur"],
-        "rightAnswer" : "professeur"
+        "category": "word",
+        "question" : "teacher",
+        "answer" : "professeur",
+        "possibleAnswers" : ["professeur", "parent", "directeur"]
     },
     {
-        "word" : "sometimes",
-        "answers" : ["parfois", "souvent", "jamais"],
-        "rightAnswer" : "parfois"
+        "category": "word",
+        "question" : "sometimes",
+        "answer" : "parfois",
+        "possibleAnswers" : ["parfois", "souvent", "jamais"]
     },
     {
-        "word" : "sorry",
-        "answers" : ["pardon", "souris", "sourire"],
-        "rightAnswer" : "pardon"
+        "category": "word",
+        "question" : "sorry",
+        "answer" : "pardon",
+        "possibleAnswers" : ["pardon", "souris", "sourire"]
     },
     {
-        "word" : "souvent",
-        "answers" : ["often", "sometimes", "never"],
-        "rightAnswer" : "often"
+        "category": "word",
+        "question" : "souvent",
+        "answer" : "often",
+        "possibleAnswers" : ["often", "sometimes", "never"]
     },
     {
-        "word" : "s'il-vous-plaît",
-        "answers" : ["please", "welcome", "pleasant"],
-        "rightAnswer" : "please"
+        "category": "word",
+        "question" : "s'il-vous-plaît",
+        "answer" : "please",
+        "possibleAnswers" : ["please", "welcome", "pleasant"]
     }
 ]

@@ -1,38 +1,47 @@
 [
     {
-        "word" : "bleu",
-        "rightAnswer" : "blue"
+        "category": "color",
+        "question" : "bleu",
+        "answer" : "blue"
     },
     {
-        "word" : "blanc",
-        "rightAnswer" : "white"
+        "category": "color",
+        "question" : "blanc",
+        "answer" : "white"
     },
     {
-        "word" : "jaune",
-        "rightAnswer" : "yellow"
+        "category": "color",
+        "question" : "jaune",
+        "answer" : "yellow"
     },
     {
-        "word" : "noir",
-        "rightAnswer" : "black"
+        "category": "color",
+        "question" : "noir",
+        "answer" : "black"
     },
     {
-        "word" : "gris",
-        "rightAnswer" : "grey"
+        "category": "color",
+        "question" : "gris",
+        "answer" : "grey"
     },
     {
-        "word" : "rose",
-        "rightAnswer" : "pink"
+        "category": "color",
+        "question" : "rose",
+        "answer" : "pink"
     },
     {
-        "word" : "vert",
-        "rightAnswer" : "green"
+        "category": "color",
+        "question" : "vert",
+        "answer" : "green"
     },
     {
-        "word" : "violet",
-        "rightAnswer" : "purple"
+        "category": "color",
+        "question" : "violet",
+        "answer" : "purple"
     },
     {
-        "word" : "rouge",
-        "rightAnswer" : "red"
+        "category": "color",
+        "question" : "rouge",
+        "answer" : "red"
     }
 ]

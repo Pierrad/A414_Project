@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Project</string>
     <string name="dashboard_name">Le dashboard</string>
+    <string name="english_quizz_enonce">Quelle est la traduction de \" %1$s \" ?</string>
 </resources>

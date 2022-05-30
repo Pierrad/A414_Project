@@ -3,10 +3,14 @@ package com.example.project.english;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.View;
 
 import com.example.project.R;
+import com.example.project.english.conjugaison.ConjugaisonActivity;
+import com.example.project.english.oralcomprehension.OralComprehensionActivity;
+import com.example.project.english.vocabulary.VocabularyDashboardActivity;
 
 import java.util.Objects;
 
@@ -20,6 +24,7 @@ public class EnglishDashboardActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.english_dashboard);
         Objects.requireNonNull(getSupportActionBar()).setTitle("Dashboard - Anglais");
+        Objects.requireNonNull(getSupportActionBar()).setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.english)));
 
         this.vocabulary = new Intent(this, VocabularyDashboardActivity.class);
         this.conjugaison = new Intent(this, ConjugaisonActivity.class);
@@ -31,11 +36,11 @@ public class EnglishDashboardActivity extends AppCompatActivity {
         this.startActivity(vocabulary);
     }
 
-    public void redirectToConjugaison(View view) {
+    public void startQuizzConjugaison(View view) {
         this.startActivity(conjugaison);
     }
 
-    public void redirectToOralComprehension(View view) {
+    public void startQuizzOralComprehension(View view) {
         this.startActivity(oralComprehension);
     }
 }

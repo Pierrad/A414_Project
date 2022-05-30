@@ -1,0 +1,52 @@
+[
+    {
+        "category": "verb",
+        "question" : "I ... tall",
+        "answer" : "am"
+    },
+    {
+        "category": "verb",
+        "question" : "You ... 10 years old",
+        "answer" : "are"
+    },
+    {
+        "category": "verb",
+        "question" : "He ... a little dog",
+        "answer" : "has"
+    },
+    {
+        "category": "verb",
+        "question" : "Carla and I ... in the same class",
+        "answer" : "are"
+    },
+    {
+        "category": "verb",
+        "question" : "They ... a good job",
+        "answer" : "have"
+    },
+    {
+        "category": "verb",
+        "question" : "Sophie ... American",
+        "answer" : "is"
+    },
+    {
+        "category": "verb",
+        "question" : "John and Peter ... twin brothers",
+        "answer" : "are"
+    },
+    {
+        "category": "verb",
+        "question" : "She ... a big computer",
+        "answer" : "has"
+    },
+    {
+        "category": "verb",
+        "question" : "You ... beautiful",
+        "answer" : "are"
+    },
+    {
+        "category": "verb",
+        "question" : "James and you ... a black dog",
+        "answer" : "have"
+    }
+]
