@@ -9,4 +9,9 @@
     <color name="white">#FFFFFFFF</color>
     <color name="english">#F3C745</color>
     <color name="english_light">#E2FFDD7A</color>
+    <color name="history">#659CFA</color>
+    <color name="defaultButton">#FF673AB7</color>
+    <color name="disabledButton">#FF959595</color>
+    <color name="green">#54FB54</color>
+    <color name="red">#FF5454</color>
 </resources>

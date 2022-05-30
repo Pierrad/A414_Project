@@ -2,9 +2,14 @@ package com.example.project;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.ActionBar;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.TypedValue;
+import android.view.Gravity;
 import android.view.View;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.example.project.english.EnglishDashboardActivity;
 import com.example.project.french.FrenchDashboardActivity;
@@ -16,11 +21,23 @@ import java.util.Objects;
 
 public class DashboardActivity extends AppCompatActivity {
     private User user = User.getInstance(this);
+    private ImageView avatar;
+    private TextView pseudo;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.dashboard);
-        Objects.requireNonNull(getSupportActionBar()).setTitle("Dashboard - " + user.getPseudo());
+        Objects.requireNonNull(getSupportActionBar()).setTitle("Dashboard");
+        registerElements();
+    }
+
+    public void registerElements() {
+        avatar = findViewById(R.id.avatar);
+        pseudo = findViewById(R.id.dashboardTitle);
+
+        avatar.setImageResource(user.getAvatar());
+        pseudo.setText(user.getPseudo());
     }
 
     public void redirectToEnglish(View v) {

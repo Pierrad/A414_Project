@@ -121,7 +121,7 @@ public class VocabularyWordsActivity extends AppCompatActivity {
         }
 
         Collections.shuffle(quizzEntries);
-        title.setText("Question 1/" + String.valueOf(quizzEntries.size()));
+        title.setText(getString(R.string.quizz_entry_title, "" + 1, "" + quizzEntries.size()));
         QuizzEntryMultiple currentEntry = quizzEntries.get(0);
         question.setText(getString(R.string.english_quizz_enonce, quizzEntries.get(quizzIndex).getQuestion()));
         btn1.setText(currentEntry.getPossibleAnswers().get(0).toString());
@@ -161,7 +161,7 @@ public class VocabularyWordsActivity extends AppCompatActivity {
             intent.putExtra("score", score);
             this.startActivity(intent);
         } else {
-            title.setText("Question " + String.valueOf(quizzIndex+1) + "/" + String.valueOf(quizzEntries.size()));
+            title.setText(getString(R.string.quizz_entry_title, "" + (quizzIndex + 1), "" + quizzEntries.size()));
             QuizzEntryMultiple currentEntry = quizzEntries.get(quizzIndex);
             question.setText(getString(R.string.english_quizz_enonce, quizzEntries.get(quizzIndex).getQuestion()));
             btn1.setBackgroundColor(getResources().getColor(R.color.english_light));

@@ -81,7 +81,7 @@ public class ConjugaisonActivity extends AppCompatActivity {
         }
 
         Collections.shuffle(quizzEntries);
-        title.setText("Question 1/" + String.valueOf(quizzEntries.size()));
+        title.setText(getString(R.string.quizz_entry_title, "" + 1, "" + quizzEntries.size()));
         question.setText(quizzEntries.get(0).getQuestion());
         answer.setText("");
     }
@@ -119,7 +119,7 @@ public class ConjugaisonActivity extends AppCompatActivity {
             intent.putExtra("score", score);
             this.startActivity(intent);
         } else {
-            title.setText("Question " + String.valueOf(quizzIndex+1) + "/" + String.valueOf(quizzEntries.size()));
+            title.setText(getString(R.string.quizz_entry_title, "" + (quizzIndex + 1), "" + quizzEntries.size()));
             question.setText(quizzEntries.get(quizzIndex).getQuestion());
             answer.setText("");
         }

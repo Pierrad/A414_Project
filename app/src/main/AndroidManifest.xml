@@ -22,7 +22,6 @@
         <activity android:name=".LoginActivity" />
         <activity android:name=".english.EnglishDashboardActivity" />
         <activity android:name=".french.FrenchDashboardActivity" />
-        <activity android:name=".history.HistoryDashboardActivity" />
         <activity android:name=".maths.MathsDashboardActivity" />
         <activity android:name=".english.vocabulary.VocabularyDashboardActivity" />
         <activity android:name=".english.conjugaison.ConjugaisonActivity" />
@@ -31,6 +30,11 @@
         <activity android:name=".english.vocabulary.VocabularyColorsActivity" />
         <activity android:name=".english.vocabulary.VocabularyFiguresActivity" />
         <activity android:name=".english.quizz.EnglishResultActivity" />
+        <activity android:name=".history.HistoryDashboardActivity" />
+        <activity android:name=".history.activities.QuizzActivity" />
+        <activity android:name=".history.activities.ResultActivity" />
+        <activity android:name=".notification.NotificationActivity" />
+        <receiver android:name=".notification.AlarmReceiver" />
     </application>
 
 </manifest>

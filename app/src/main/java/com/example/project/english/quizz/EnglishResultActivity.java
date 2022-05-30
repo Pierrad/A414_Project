@@ -35,15 +35,15 @@ public class EnglishResultActivity extends AppCompatActivity {
 
         percent = (score / quizzEntries.size()) * 100;
         if (percent < 40) {
-            title.setText("Dommage !");
+            title.setText(getResources().getText(R.string.quizz_results_bad));
         } else if (percent > 40 && percent < 60) {
-            title.setText("Pas mal !");
+            title.setText(getResources().getText(R.string.quizz_results_okay));
         } else if (percent > 60 && percent < 90) {
-            title.setText("Bien !");
+            title.setText(getResources().getText(R.string.quizz_results_good));
         } else {
-            title.setText("Félicitations !");
+            title.setText(getResources().getText(R.string.quizz_results_very_good));
         }
-        subtitle.setText(String.valueOf(score) + "/" + String.valueOf(quizzEntries.size()));
+        subtitle.setText(getString(R.string.quizz_results_score, "" + (score), "" + quizzEntries.size()));
 
         QuizzEntryAdapter adapter = new QuizzEntryAdapter(this, quizzEntries);
         results.setAdapter(adapter);
