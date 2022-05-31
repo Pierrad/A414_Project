@@ -16,60 +16,59 @@
         <ImageView
             android:id="@+id/historyDashboardImage"
             android:layout_width="match_parent"
-            android:layout_height="300dp"
+            android:layout_height="250dp"
             android:layout_marginTop="30dp"
-            app:srcCompat="@mipmap/english_dashboard"
-            tools:srcCompat="@mipmap/english_dashboard" />
+            app:srcCompat="@mipmap/english_vocabulary_dashboard"
+            tools:srcCompat="@mipmap/english_vocabulary_dashboard" />
 
         <TextView
             android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
-            android:text="Que veux-tu travailler ?"
+            android:text="Entraîne toi !"
             android:textSize="16sp"
             android:textStyle="bold"
             tools:ignore="MissingConstraints" />
 
         <Button
-            android:id="@+id/buttonStartVocabulary"
+            android:id="@+id/buttonStartWords"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:backgroundTint="@color/english"
-            android:onClick="redirectToVocabulary"
-            android:text="Vocabulaire"
+            android:onClick="startQuizzWordsTranslation"
+            android:text="Donne le bon mot !"
             android:textSize="16sp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <Button
-            android:id="@+id/buttonStartConjugaison"
+            android:id="@+id/buttonStartColors"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:backgroundTint="@color/english"
-            android:onClick="startQuizzConjugaison"
-            android:text="Conjugaison"
+            android:onClick="startQuizzColorsTranslation"
+            android:text="Donne la bonne couleur !"
             android:textSize="16sp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <Button
-            android:id="@+id/buttonStartOral"
+            android:id="@+id/buttonStartFigures"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:backgroundTint="@color/english"
-            android:onClick="startQuizzOralComprehension"
-            android:text="Compréhension orale"
+            android:onClick="startQuizzFiguresTranslation"
+            android:text="Donne le bon chiffre !"
             android:textSize="16sp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
-
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

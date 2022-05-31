@@ -1,0 +1,52 @@
+[
+    {
+        "category": "figure",
+        "question" : "un",
+        "answer" : "one"
+    },
+    {
+        "category": "figure",
+        "question" : "deux",
+        "answer" : "two"
+    },
+    {
+        "category": "figure",
+        "question" : "trois",
+        "answer" : "three"
+    },
+    {
+        "category": "figure",
+        "question" : "quatre",
+        "answer" : "four"
+    },
+    {
+        "category": "figure",
+        "question" : "cinq",
+        "answer" : "five"
+    },
+    {
+        "category": "figure",
+        "question" : "six",
+        "answer" : "six"
+    },
+    {
+        "category": "figure",
+        "question" : "sept",
+        "answer" : "seven"
+    },
+    {
+        "category": "figure",
+        "question" : "huit",
+        "answer" : "eight"
+    },
+    {
+        "category": "figure",
+        "question" : "neuf",
+        "answer" : "nine"
+    },
+    {
+        "category": "figure",
+        "question" : "dix",
+        "answer" : "ten"
+    }
+]

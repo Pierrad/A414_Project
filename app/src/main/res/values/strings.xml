@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">Project</string>
     <string name="dashboard_name">Le dashboard</string>
+    <string name="english_quizz_enonce">Quelle est la traduction de \" %1$s \" ?</string>
     <string name="quizz_entry_title">Question %1$s / %2$s</string>
     <string name="quizz_results_bad">Dommage</string>
     <string name="quizz_results_okay">Pas mal !</string>

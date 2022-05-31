@@ -1,0 +1,62 @@
+[
+    {
+        "category": "word",
+        "question" : "boy",
+        "answer" : "garçon",
+        "possibleAnswers" : ["garçon", "fille", "homme"]
+    },
+    {
+        "category": "word",
+        "question" : "city",
+        "answer" : "ville",
+        "possibleAnswers" : ["ville", "pays", "citoyen"]
+    },
+    {
+        "category": "word",
+        "question" : "livre",
+        "answer" : "book",
+        "possibleAnswers" : ["book", "paper", "notebook"]
+    },
+    {
+        "category": "word",
+        "question" : "maison",
+        "answer" : "house",
+        "possibleAnswers" : ["house", "garden", "school"]
+    },
+    {
+        "category": "word",
+        "question" : "merci",
+        "answer" : "thank you",
+        "possibleAnswers" : ["thank you", "they", "excuse me"]
+    },
+    {
+        "category": "word",
+        "question" : "teacher",
+        "answer" : "professeur",
+        "possibleAnswers" : ["professeur", "parent", "directeur"]
+    },
+    {
+        "category": "word",
+        "question" : "sometimes",
+        "answer" : "parfois",
+        "possibleAnswers" : ["parfois", "souvent", "jamais"]
+    },
+    {
+        "category": "word",
+        "question" : "sorry",
+        "answer" : "pardon",
+        "possibleAnswers" : ["pardon", "souris", "sourire"]
+    },
+    {
+        "category": "word",
+        "question" : "souvent",
+        "answer" : "often",
+        "possibleAnswers" : ["often", "sometimes", "never"]
+    },
+    {
+        "category": "word",
+        "question" : "s'il-vous-plaît",
+        "answer" : "please",
+        "possibleAnswers" : ["please", "welcome", "pleasant"]
+    }
+]

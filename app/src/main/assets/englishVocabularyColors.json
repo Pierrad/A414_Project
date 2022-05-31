@@ -1,0 +1,47 @@
+[
+    {
+        "category": "color",
+        "question" : "bleu",
+        "answer" : "blue"
+    },
+    {
+        "category": "color",
+        "question" : "blanc",
+        "answer" : "white"
+    },
+    {
+        "category": "color",
+        "question" : "jaune",
+        "answer" : "yellow"
+    },
+    {
+        "category": "color",
+        "question" : "noir",
+        "answer" : "black"
+    },
+    {
+        "category": "color",
+        "question" : "gris",
+        "answer" : "grey"
+    },
+    {
+        "category": "color",
+        "question" : "rose",
+        "answer" : "pink"
+    },
+    {
+        "category": "color",
+        "question" : "vert",
+        "answer" : "green"
+    },
+    {
+        "category": "color",
+        "question" : "violet",
+        "answer" : "purple"
+    },
+    {
+        "category": "color",
+        "question" : "rouge",
+        "answer" : "red"
+    }
+]
