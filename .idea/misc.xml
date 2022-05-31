@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+<<<<<<< HEAD
         <entry key="..\:/Users/Marie-Eden/Documents/A414_Project/app/src/main/res/layout/dashboard.xml" value="0.2109375" />
         <entry key="..\:/Users/Marie-Eden/Documents/A414_Project/app/src/main/res/layout/english.xml" value="0.3625" />
         <entry key="..\:/Users/Marie-Eden/Documents/A414_Project/app/src/main/res/layout/english_conjugaison.xml" value="0.265625" />
@@ -18,6 +19,17 @@
         <entry key="..\:/Users/Marie-Eden/Documents/A414_Project/app/src/main/res/layout/quizz_english_result_item.xml" value="0.18541666666666667" />
         <entry key="..\:/Users/Marie-Eden/Documents/A414_Project/app/src/main/res/layout/quizz_english_results.xml" value="0.18541666666666667" />
         <entry key="..\:/Users/Marie-Eden/Documents/A414_Project/app/src/main/res/layout/quizz_english_simple_entry.xml" value="0.25" />
+=======
+        <entry key="app/src/main/res/drawable/ic_baseline_fast_rewind_24.xml" value="0.1265" />
+        <entry key="app/src/main/res/drawable/ic_fast_forward.xml" value="0.1265" />
+        <entry key="app/src/main/res/drawable/ic_pause.xml" value="0.1265" />
+        <entry key="app/src/main/res/drawable/rounded_edittext.xml" value="0.1265" />
+        <entry key="app/src/main/res/layout/dashboard.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/dictation.xml" value="0.12195121951219512" />
+        <entry key="app/src/main/res/layout/english_dashboard.xml" value="0.28229166666666666" />
+        <entry key="app/src/main/res/layout/french_dashboard.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/rounded_edittext.xml" value="0.15092592592592594" />
+>>>>>>> french1
       </map>
     </option>
   </component>

@@ -35,6 +35,7 @@
         <activity android:name=".history.activities.ResultActivity" />
         <activity android:name=".notification.NotificationActivity" />
         <receiver android:name=".notification.AlarmReceiver" />
+        <activity android:name=".french.dictation.DictationActivity" />
     </application>
 
 </manifest>
