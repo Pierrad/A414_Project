@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/purple_200"
+    android:background="@color/francais"
     android:orientation="vertical">
 
     <ImageView
@@ -89,7 +89,7 @@
             android:layout_height="100dp"
             android:layout_marginLeft="10dp"
             android:layout_marginTop="30dp"
-            android:layout_weight=".70"
+            android:layout_weight=".80"
             android:background="@drawable/rounded_edittext"
             android:gravity="top"
             tools:ignore="SpeakableTextPresentCheck" />
@@ -108,9 +108,9 @@
             android:id="@+id/buttonCorrection"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
             android:onClick="afficherCorrection"
-            android:text="Corriger"
-            android:layout_marginTop="30dp"/>
+            android:text="Corriger" />
 
     </LinearLayout>
     <LinearLayout
@@ -122,7 +122,7 @@
     <TextView
         android:id="@+id/corriger"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="300dp"
         android:layout_weight="1"
         android:text=""
         android:layout_marginTop="30dp"
