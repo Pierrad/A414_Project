@@ -25,7 +25,7 @@ public class AlarmReceiver extends BroadcastReceiver {
         PendingIntent pendingIntent = stackBuilder.getPendingIntent(0, PendingIntent.FLAG_UPDATE_CURRENT);
 
         Notification.Builder builder = new Notification.Builder(context);
-        Notification notification = builder.setContentTitle("A414 App")
+        Notification notification = builder.setContentTitle("DUTLearn")
                 .setContentText("Venez réviser en vous amusant ! 😁")
                 .setTicker("Nouvelle notification !")
                 .setSmallIcon(R.mipmap.ic_launcher)

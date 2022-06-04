@@ -39,6 +39,12 @@ public class DashboardActivity extends AppCompatActivity {
         registerElements(); // Update level
     }
 
+    @Override
+    public void onBackPressed() {
+        // super.onBackPressed();
+        // Not calling **super**, disables back button in current screen.
+    }
+
     public void registerElements() {
         avatar = findViewById(R.id.avatar);
         pseudo = findViewById(R.id.dashboardTitle);
