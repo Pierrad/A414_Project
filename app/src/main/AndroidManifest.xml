@@ -36,6 +36,7 @@
         <activity android:name=".notification.NotificationActivity" />
         <receiver android:name=".notification.AlarmReceiver" />
         <activity android:name=".french.dictation.DictationActivity" />
+        <activity android:name=".english.oralcomprehension.EnglishResultAudioActivity" />
     </application>
 
 </manifest>

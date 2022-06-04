@@ -8,4 +8,5 @@
     <string name="quizz_results_good">Bien !</string>
     <string name="quizz_results_very_good">Félicitations 🎉</string>
     <string name="quizz_results_score">%1$s / %2$s</string>
+    <string name="english_oral_question">Quel mot a été prononcé ?</string>
 </resources>
