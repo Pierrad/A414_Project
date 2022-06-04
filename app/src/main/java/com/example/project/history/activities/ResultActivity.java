@@ -17,16 +17,20 @@ import com.example.project.R;
 import com.example.project.history.HistoryDashboardActivity;
 import com.example.project.history.quizz.QuizzEntriesAdapter;
 import com.example.project.history.quizz.QuizzEntry;
+import com.example.project.user.User;
 
 import java.util.ArrayList;
 import java.util.Objects;
 
 public class ResultActivity extends AppCompatActivity {
+    private User user = User.getInstance(this);
 
     private ArrayList<QuizzEntry> entries;
     private ListView results;
     private TextView title, subtitle;
     private int score;
+
+    private int percentageScore;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,6 +52,7 @@ public class ResultActivity extends AppCompatActivity {
         registerElements();
         renderScore();
         renderResults();
+        addExperienceToUser();
     }
 
     public void registerElements() {
@@ -73,6 +78,10 @@ public class ResultActivity extends AppCompatActivity {
     public void renderResults() {
         QuizzEntriesAdapter adapter = new QuizzEntriesAdapter(this, entries);
         results.setAdapter(adapter);
+    }
+
+    public void addExperienceToUser() {
+        user.addExperience(percentageScore);
     }
 
     public void goBackToDashboard(View v) {

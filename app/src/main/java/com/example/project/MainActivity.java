@@ -49,6 +49,6 @@ public class MainActivity extends AppCompatActivity {
 
     public boolean hasAccount() {
         SharedPreferences sh = getSharedPreferences("PersonalInfo", MODE_PRIVATE);
-        return sh.contains("pseudo") && sh.contains("avatar");
+        return sh.contains("pseudo") && sh.contains("avatar") && sh.contains("experience");
     }
 }
