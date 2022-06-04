@@ -6,11 +6,14 @@ import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
 
 import com.example.project.R;
 import com.example.project.english.quizz.EnglishResultActivity;
@@ -28,7 +31,7 @@ import java.util.Collections;
 import java.util.Objects;
 
 public class ConjugaisonActivity extends AppCompatActivity {
-    String apiURL = "http://10.0.2.2:3000/english/verbs";
+    String apiURL = "";
     ArrayList<QuizzEntrySimple> quizzEntries = new ArrayList<QuizzEntrySimple>();
     int quizzIndex = 0;
     int score = 0;
@@ -42,10 +45,17 @@ public class ConjugaisonActivity extends AppCompatActivity {
         setContentView(R.layout.quizz_english_simple_entry);
         Objects.requireNonNull(getSupportActionBar()).setTitle("Anglais - Vocabulaire - Conjugaison");
         Objects.requireNonNull(getSupportActionBar()).setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.english)));
+        // Set StatusBar color
+        Window window = this.getWindow();
+        window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
+        window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
+        window.setStatusBarColor(ContextCompat.getColor(this,R.color.english));
 
         title = findViewById(R.id.englishQuizzSimpleTitle);
         question = findViewById(R.id.englishQuizzSimpleQuestion);
         answer = findViewById(R.id.englishQuizzSimpleAnswer);
+
+        apiURL = getResources().getString(R.string.API_address) + "/english/verbs";
 
 //        HTTPHandler h = new HTTPHandler();
 //        String strJSON = h.makeServiceCall(apiURL);

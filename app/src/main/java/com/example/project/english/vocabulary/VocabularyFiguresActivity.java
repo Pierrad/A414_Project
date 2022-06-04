@@ -29,7 +29,7 @@ import java.util.Locale;
 import java.util.Objects;
 
 public class VocabularyFiguresActivity extends AppCompatActivity {
-    String apiURL = "http://10.0.2.2:3000/english/figures";
+    String apiURL = "";
     ArrayList<QuizzEntrySimple> quizzEntries = new ArrayList<QuizzEntrySimple>();
     int quizzIndex = 0;
     int score = 0;
@@ -47,6 +47,8 @@ public class VocabularyFiguresActivity extends AppCompatActivity {
         title = findViewById(R.id.englishQuizzSimpleTitle);
         question = findViewById(R.id.englishQuizzSimpleQuestion);
         answer = findViewById(R.id.englishQuizzSimpleAnswer);
+
+        apiURL = getResources().getString(R.string.API_address) + "/english/figures";
 
 //        HTTPHandler h = new HTTPHandler();
 //        String strJSON = h.makeServiceCall(apiURL);

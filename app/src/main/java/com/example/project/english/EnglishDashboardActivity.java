@@ -1,11 +1,14 @@
 package com.example.project.english;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
 
 import android.content.Intent;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 
 import com.example.project.R;
 import com.example.project.english.conjugaison.ConjugaisonActivity;
@@ -25,6 +28,11 @@ public class EnglishDashboardActivity extends AppCompatActivity {
         setContentView(R.layout.english_dashboard);
         Objects.requireNonNull(getSupportActionBar()).setTitle("Dashboard - Anglais");
         Objects.requireNonNull(getSupportActionBar()).setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.english)));
+        // Set StatusBar color
+        Window window = this.getWindow();
+        window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
+        window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
+        window.setStatusBarColor(ContextCompat.getColor(this,R.color.english));
 
         this.vocabulary = new Intent(this, VocabularyDashboardActivity.class);
         this.conjugaison = new Intent(this, ConjugaisonActivity.class);

@@ -1,11 +1,16 @@
 package com.example.project.french.quizz;
 
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
+
 import com.example.project.R;
 import com.example.project.helpers.JSONHandler;
 
@@ -31,7 +36,14 @@ public class QuizzActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.french_quizz);
-        Objects.requireNonNull(getSupportActionBar()).setTitle("French - MCQ");
+        Objects.requireNonNull(getSupportActionBar()).setTitle("Français - MCQ");
+        Objects.requireNonNull(getSupportActionBar()).setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.frenchMain)));
+        // Set StatusBar color
+        Window window = this.getWindow();
+        window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
+        window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
+        window.setStatusBarColor(ContextCompat.getColor(this,R.color.frenchMain));
+
         loadQuestions();
         subject = (TextView) findViewById(R.id.MCQQuestion);
         result = (TextView) findViewById(R.id.MCQResult);

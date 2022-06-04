@@ -28,7 +28,7 @@ import java.util.Collections;
 import java.util.Objects;
 
 public class VocabularyColorsActivity extends AppCompatActivity {
-    String apiURL = "http://10.0.2.2:3000/english/colors";
+    String apiURL = "";
     ArrayList<QuizzEntrySimple> quizzEntries = new ArrayList<QuizzEntrySimple>();
     int quizzIndex = 0;
     int score = 0;
@@ -46,6 +46,8 @@ public class VocabularyColorsActivity extends AppCompatActivity {
         title = findViewById(R.id.englishQuizzSimpleTitle);
         question = findViewById(R.id.englishQuizzSimpleQuestion);
         answer = findViewById(R.id.englishQuizzSimpleAnswer);
+
+        apiURL = getResources().getString(R.string.API_address) + "/english/colors";
 
 //        HTTPHandler h = new HTTPHandler();
 //        String strJSON = h.makeServiceCall(apiURL);

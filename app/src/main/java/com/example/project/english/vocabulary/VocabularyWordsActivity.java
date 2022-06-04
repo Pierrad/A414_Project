@@ -33,7 +33,7 @@ import java.util.Collections;
 import java.util.Objects;
 
 public class VocabularyWordsActivity extends AppCompatActivity {
-    String apiURL = "http://10.0.2.2:3000/english/words";
+    String apiURL = "";
     ArrayList<QuizzEntryMultiple> quizzEntries = new ArrayList<>();
     int quizzIndex = 0;
     String selected = "";
@@ -49,6 +49,8 @@ public class VocabularyWordsActivity extends AppCompatActivity {
         setContentView(R.layout.quizz_english_multiple_entry);
         Objects.requireNonNull(getSupportActionBar()).setTitle("Anglais - Vocabulaire - Mots");
         Objects.requireNonNull(getSupportActionBar()).setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.english)));
+
+        apiURL = getResources().getString(R.string.API_address) + "/english/words";
 
         title = findViewById(R.id.englishQuizzMultipleTitle);
         question = findViewById(R.id.englishQuizzMultipleQuestion);

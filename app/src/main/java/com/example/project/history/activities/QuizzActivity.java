@@ -1,6 +1,7 @@
 package com.example.project.history.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
 
 import android.content.Intent;
 import android.graphics.drawable.ColorDrawable;
@@ -10,6 +11,8 @@ import android.os.Parcelable;
 import android.os.SystemClock;
 import android.util.Log;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.view.animation.AnimationUtils;
 import android.widget.ArrayAdapter;
 import android.widget.CompoundButton;
@@ -31,8 +34,7 @@ import java.util.Collections;
 import java.util.Objects;
 
 public class QuizzActivity extends AppCompatActivity {
-
-    String apiURL = "http://10.0.2.2:3000/history";
+    String apiURL = "";
     ArrayList<QuizzEntry> quizzEntries = new ArrayList<>();
     int quizzIndex = 0;
     String currentSelectedAnswer = "";
@@ -49,6 +51,13 @@ public class QuizzActivity extends AppCompatActivity {
 
         Objects.requireNonNull(getSupportActionBar()).setTitle("Quizz ");
         Objects.requireNonNull(getSupportActionBar()).setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.history)));
+        // Set StatusBar color
+        Window window = this.getWindow();
+        window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
+        window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
+        window.setStatusBarColor(ContextCompat.getColor(this,R.color.history));
+
+        apiURL = getResources().getString(R.string.API_address) + "/history";
 
         registerElements();
         setTogglesListeners();
