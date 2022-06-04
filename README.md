@@ -15,7 +15,7 @@ Application permettant à des élèves de réviser.
 - Vasseur Pierre-Adrien
     - Catégorie Histoire
     - LoginActivity / DashboardActivity / Utilisateur stocké dans les SharedPreferences avec gestion de l'expérience
-    - Notification (tout les jours à 18h)
+    - Notification (tout les jours à 18h30)
 
 ## Cahier des charges
 
