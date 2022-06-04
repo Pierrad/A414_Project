@@ -1,0 +1,269 @@
+{
+  "grammar" : [
+    {
+      "question" : "Dans la phrase : \"Il regardait le sable blanc.\", quelle est la nature de \"sable blanc\"?",
+      "answers" : [
+        "Groupe nominal",
+        "COD de \"regarder\"",
+        "Adjectif qualificatif"
+      ],
+      "rightAnswer" : "Groupe nominal"
+    },
+    {
+      "question" : "Dans la phrase : \"Il regardait le sable blanc.\", quelle est la fonction de \"sable blanc\"?",
+      "answers" : [
+        "COD de \"regarder\"",
+        "Sujet de \"regarder\"",
+        "Épithète du nom commun \"sable\""
+      ],
+      "rightAnswer" : "COD de \"regarder\""
+    },
+    {
+      "question" : "Dans la phrase : \"Le printemps a été tardif cette année.\", quelle est la nature de \"printemps\"?",
+      "answers" : [
+        "Nom",
+        "Pronom",
+        "Adjectif qualificatif"
+      ],
+      "rightAnswer" : "Nom"
+    },
+    {
+      "question" : "Dans la phrase : \"Les péniches passent en paisibles caravanes.\", quelle est la fonction de \"en paisibles caravanes\"?",
+      "answers" : [
+        "Complément circonstanciel de lieu",
+        "Complément circonstanciel de temps",
+        "Compléments circonstanciel de manière"
+      ],
+      "rightAnswer" : "Compléments circonstanciel de manière"
+    },
+    {
+      "question" : "Dans la phrase : \"Les chants des oiseaux m'émerveillent toujours autant\", quelle est la nature de \"toujours\"?",
+      "answers" : [
+        "Conjonction",
+        "Adverbe",
+        "Préposition"
+      ],
+      "rightAnswer" : "Adverbe"
+    },
+    {
+      "question" : "Dans la phrase : \"Et voici mon jardin sous un soleil de printemps\", quelle est la nature de \"un\"?",
+      "answers" : [
+        "Article indéfini",
+        "Article défini",
+        "Conjonction"
+      ],
+      "rightAnswer" : "Article indéfini"
+    },
+    {
+      "question" : "Dans la phrase : \"Cependant, les narcisses sont épanouis dans l'herbe\", quelle est le fonction de \"dans l'herbe\" ?",
+      "answers" : [
+        "COD du verbe \"épanouir\"",
+        "Complément circonstanciel de manière",
+        "Complément circonstanciel de lieu"
+      ],
+      "rightAnswer" : "Complément circonstanciel de lieu"
+    },
+    {
+      "question" : "Dans la phrase : \"Créer une application, c'est vraiment trop marrant !\", quelle est la nature de \"Créer une application\"?",
+      "answers" : [
+        "Préposition",
+        "Groupe nominal",
+        "COI de \"être\""
+      ],
+      "rightAnswer" : "Groupe nominal"
+    },
+    {
+      "question" : "Dans la phrase : \"StackOverflow est mon meilleur ami !\", quelle est la nature de \"est\"?",
+      "answers" : [
+        "Adverbe",
+        "Verbe",
+        "Participe passé"
+      ],
+      "rightAnswer" : "Verbe"
+    },
+    {
+      "question" : "Dans la phrase : \"Pose moi une question sur la vie.\", quelle est le fonction de \"sur la vie\" ?",
+      "answers" : [
+        "COI de \"Pose moi une question\"",
+        "Complément circonstanciel de manière",
+        "Complément circonstanciel de temps"
+      ],
+      "rightAnswer" : "COI de \"Pose moi une question\""
+    }
+  ],
+  "spelling" : [
+    {
+      "question" : "Compléter la phrase suivante : Il a dû enlever toutes les ...... de sa maison. ",
+      "answers" : [
+        "plintes",
+        "plaintes",
+        "plinthes"
+      ],
+      "rightAnswer" : "plaintes"
+    },
+    {
+      "question" : "Compléter la phrase suivante : Le responsable, en l'..... M. Le Brun, vous contactera demain.",
+      "answers" : [
+        "ocurence",
+        "occurence",
+        "occurrence"
+      ],
+      "rightAnswer" : "occurrence"
+    },
+    {
+      "question" : "Compléter la phrase suivante : Son a eu la ..... toute la nuit.",
+      "answers" : [
+        "diarrhée",
+        "dirhée",
+        "dhiarré"
+      ],
+      "rightAnswer" : "diarrhée"
+    },
+    {
+      "question" : "Compléter la phrase suivante : Elle a exprimé son idée de manière ........ .",
+      "answers" : [
+        "sucsinte",
+        "sucinte",
+        "succincte"
+      ],
+      "rightAnswer" : "succincte"
+    },
+    {
+      "question" : "Compléter la phrase suivante : Je voudrais connaître l'.......; de ce mot.",
+      "answers" : [
+        "éthymologie",
+        "étymologie",
+        "éthimologie"
+      ],
+      "rightAnswer" : "étymologie"
+    },
+    {
+      "question" : "Compléter la phrase suivante : Le manque de sommeil rend cet enfant .........; .",
+      "answers" : [
+        "irascible",
+        "irracible",
+        "irrasible"
+      ],
+      "rightAnswer" : "irascible"
+    },
+    {
+      "question" : "Compléter la phrase suivante : Bien qu'il ponde des oeufs, l'........ est un mammifère",
+      "answers" : [
+        "ornithorinque",
+        "ornithorynque",
+        "ornithorynque"
+      ],
+      "rightAnswer" : "ornithorynque"
+    },
+    {
+      "question" : "Compléter la phrase suivante : Elle a repeint sa cuisine en rose .... .",
+      "answers" : [
+        "fushia",
+        "fuchia",
+        "fuchsia"
+      ],
+      "rightAnswer" : "fuchsia"
+    },
+    {
+      "question" : "Compléter la phrase suivante : Monkey a … d’un signe de tête",
+      "answers" : [
+        "acquiescé",
+        "acquiecsé",
+        "aquiéscé"
+      ],
+      "rightAnswer" : "acquiescé"
+    }
+  ],
+  "conjugation" : [
+    {
+      "question" : "Conjuguer le verbe (au futur simple) entre paranthèse : Un jour, tu (être) grand.",
+      "answers" : [
+        "sera",
+        "seras",
+        "serat"
+      ],
+      "rightAnswer" : "seras"
+    },
+    {
+      "question" : "Conjuguer le verbe (au futur simple) entre paranthèse : Vous (être) des nôtres.",
+      "answers" : [
+        "serai",
+        "serais",
+        "serez"
+      ],
+      "rightAnswer" : "serez"
+    },
+    {
+      "question" : "Conjuguer le verbe (au futur antérieur) entre paranthèse : Ils (se perdre) en chemin",
+      "answers" : [
+        "se seront perdus",
+        "se perdront",
+        "se seraient perdus"
+      ],
+      "rightAnswer" : "se seront perdus"
+    },
+    {
+      "question" : "Conjuguer le verbe (au futur antérieur) entre paranthèse : Elles (ne pas commprendre) comment arriver ici.",
+      "answers" : [
+        "n'auront pas comrpis",
+        "ne comprendront pas",
+        "n'aura pas compris"
+      ],
+      "rightAnswer" : "n'auront pas comrpis"
+    },
+    {
+      "question" : "Conjuguer le verbe (à l'imparfait du subjonctif) entre paranthèse : Je n'imaginais pas qu'il (être) chanteur.",
+      "answers" : [
+        "fut",
+        "fût",
+        "fit"
+      ],
+      "rightAnswer" : "fût"
+    },
+    {
+      "question" : "Conjuguer le verbe (à l'imparfait du subjonctif) entre paranthèse : Il eût mieux valu qu'il (dire) sa façon de penser",
+      "answers" : [
+        "dîtes",
+        "dit",
+        "disa"
+      ],
+      "rightAnswer" : "dit"
+    },
+    {
+      "question" : "Accorder bien le verbe entre paranthèse : Il faut (manger) de la soupe pour être grand",
+      "answers" : [
+        "mangé",
+        "manger",
+        "mangée"
+      ],
+      "rightAnswer" : "manger"
+    },
+    {
+      "question" : "Conjuguer le verbe (au présent) entre paranthèse : (Essuyer)-vous les mains.",
+      "answers" : [
+        "Essuyez",
+        "Essuiez",
+        "Les deux"
+      ],
+      "rightAnswer" : "Les deux"
+    },
+    {
+      "question" : "Conjuguer le verbe entre paranthèse : Maman et moi devous nous (renseigner) sur le trajet",
+      "answers" : [
+        "renseigné",
+        "renseigner",
+        "renseignée"
+      ],
+      "rightAnswer" : "renseigner"
+    },
+    {
+      "question" : "Conjuguer le verbe entre paranthèse : Nous (nettoyer) notre chambre",
+      "answers" : [
+        "nettoyons",
+        "nettoions",
+        "nettyions"
+      ],
+      "rightAnswer" : "nettoyons"
+    }
+  ]
+}

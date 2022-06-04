@@ -9,6 +9,7 @@ import android.view.View;
 import com.example.project.R;
 import com.example.project.english.EnglishDashboardActivity;
 import com.example.project.french.dictation.DictationActivity;
+import com.example.project.french.quizz.QuizzActivity;
 
 import java.util.Objects;
 
@@ -22,6 +23,10 @@ public class FrenchDashboardActivity extends AppCompatActivity {
     }
     public void redirectToDictation(View v) {
         Intent intent = new Intent(this, DictationActivity.class);
+        this.startActivity(intent);
+    }
+    public void redirectToQuizz(View v) {
+        Intent intent = new Intent(this, QuizzActivity.class);
         this.startActivity(intent);
     }
 }
