@@ -183,6 +183,12 @@ public class DictationActivity extends AppCompatActivity {
         });
     }
 
+    @Override
+    public void onPause() {
+        super.onPause();
+        mediaPlayer.pause();
+    }
+
     @SuppressLint("DefaultLocale")
     private String convertFormat(int duration) {
         return String.format("%02d:%02d"

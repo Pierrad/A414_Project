@@ -139,6 +139,13 @@ public class OralComprehensionActivity extends AppCompatActivity {
             }
         });
     }
+
+    @Override
+    public void onPause() {
+        super.onPause();
+        mp.pause();
+    }
+
     public static ArrayList<AudioEntryMultiple> buildAudioEntries() {
         ArrayList<AudioEntryMultiple> audios = new ArrayList<>();
         audios.add(new AudioEntryMultiple(R.raw.here, "here", new ArrayList<String>(Arrays.asList("here","heal","hare"))));
