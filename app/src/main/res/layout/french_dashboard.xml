@@ -13,5 +13,11 @@
         android:layout_height="wrap_content"
         android:onClick="redirectToDictation"
         android:text="Des dictées" />
+    <Button
+        android:id="@+id/quizz"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="redirectToQuizz"
+        android:text="Améliore toi avec un petit quizz de grammaire, conjugaison, orthographe ..." />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
