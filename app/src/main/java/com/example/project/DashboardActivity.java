@@ -33,12 +33,18 @@ public class DashboardActivity extends AppCompatActivity {
         registerElements();
     }
 
+    @Override
+    protected void onResume() {
+        super.onResume();
+        registerElements(); // Update level
+    }
+
     public void registerElements() {
         avatar = findViewById(R.id.avatar);
         pseudo = findViewById(R.id.dashboardTitle);
 
         avatar.setImageResource(user.getAvatar());
-        pseudo.setText(user.getPseudo() + " - Niveau " + user.getLevel());
+        pseudo.setText(getString(R.string.pseudoLevel, user.getPseudo(), "" + user.getLevel()));
     }
 
     public void redirectToEnglish(View v) {

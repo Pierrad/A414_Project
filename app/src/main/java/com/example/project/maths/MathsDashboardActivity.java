@@ -39,6 +39,7 @@ import android.widget.Toast;
 
 import com.example.project.R;
 import com.example.project.helpers.JSONHandler;
+import com.example.project.user.User;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -48,7 +49,7 @@ import java.util.Objects;
 import java.util.Random;
 
 public class MathsDashboardActivity extends AppCompatActivity {
-
+    private User user = User.getInstance(this);
     TextView tvResult;
 
     EditText editText1;
@@ -348,6 +349,7 @@ public class MathsDashboardActivity extends AppCompatActivity {
             buttonCancel.setVisibility(View.GONE);
             buttonReset.setVisibility(View.VISIBLE);
             Toast.makeText(this, "Correct!", Toast.LENGTH_SHORT).show();
+            addExperienceToUser(); // Add experience for each good answer
         } else {
             for (EditText editText : editTexts) {
                 editText.setTextColor(Color.RED);
@@ -385,5 +387,9 @@ public class MathsDashboardActivity extends AppCompatActivity {
         // reset buttons
         buttonReset.setVisibility(View.GONE);
         buttonCancel.setVisibility(View.VISIBLE);
+    }
+
+    public void addExperienceToUser() {
+        user.addExperience(25);
     }
 }

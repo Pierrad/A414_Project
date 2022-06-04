@@ -14,11 +14,13 @@ import androidx.core.content.ContextCompat;
 
 import com.example.project.R;
 import com.example.project.english.EnglishDashboardActivity;
+import com.example.project.user.User;
 
 import java.util.ArrayList;
 import java.util.Objects;
 
 public class EnglishResultActivity extends AppCompatActivity {
+    private User user = User.getInstance(this);
     int score, percent;
 
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,6 +54,7 @@ public class EnglishResultActivity extends AppCompatActivity {
             title.setText(getResources().getText(R.string.quizz_results_very_good));
         }
         subtitle.setText(getString(R.string.quizz_results_score, "" + (score), "" + quizzEntries.size()));
+        addExperienceToUser();
 
         QuizzEntryAdapter adapter = new QuizzEntryAdapter(this, quizzEntries);
         results.setAdapter(adapter);
@@ -60,5 +63,9 @@ public class EnglishResultActivity extends AppCompatActivity {
     public void goBackToEnglishDashboard(View view) {
         Intent englishDashboard = new Intent(this, EnglishDashboardActivity.class);
         this.startActivity(englishDashboard);
+    }
+
+    public void addExperienceToUser() {
+        user.addExperience(percent);
     }
 }

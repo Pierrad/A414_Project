@@ -13,6 +13,7 @@ import androidx.core.content.ContextCompat;
 
 import com.example.project.R;
 import com.example.project.helpers.JSONHandler;
+import com.example.project.user.User;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -23,6 +24,7 @@ import java.util.HashMap;
 import java.util.Objects;
 
 public class QuizzActivity extends AppCompatActivity {
+    private User user = User.getInstance(this);
     JSONArray[] quizz;
     int currentQuestion = 0;
     int score = 0;
@@ -110,11 +112,16 @@ public class QuizzActivity extends AppCompatActivity {
             score++;
             result.setText("Score : " + score + "/" + currentQuestion);
             explanation.setText("Bonne réponse !\nPassage à la prochaine question");
+            addExperienceToUser();
         } else {
             result.setText("Score : " + score + "/" + currentQuestion);
             explanation.setText("Mauvaise réponse !\n La bonne réponse était : " + correct + "\nPassage à la prochaine question ...");
         }
         v.setOnClickListener(null);
         displayQuestion(quizz[currentQuestion % 3]);
+    }
+
+    public void addExperienceToUser() {
+        user.addExperience(25);
     }
 }

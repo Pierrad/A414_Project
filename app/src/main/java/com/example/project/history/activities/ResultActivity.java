@@ -30,7 +30,7 @@ public class ResultActivity extends AppCompatActivity {
     private TextView title, subtitle;
     private int score;
 
-    private int percentageScore;
+    private float percentageScore;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -62,7 +62,7 @@ public class ResultActivity extends AppCompatActivity {
     }
 
     public void renderScore() {
-        float percentageScore = (score * 100.0f) / entries.size() ;
+        percentageScore = (score * 100.0f) / entries.size() ;
         if (percentageScore < 40) {
             title.setText(getResources().getText(R.string.quizz_results_bad));
         } else if (percentageScore > 40 && percentageScore < 60) {

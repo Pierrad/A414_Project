@@ -21,6 +21,7 @@ import androidx.core.content.ContextCompat;
 
 import com.example.project.R;
 import com.example.project.english.EnglishDashboardActivity;
+import com.example.project.user.User;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -30,7 +31,7 @@ import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
 public class DictationActivity extends AppCompatActivity {
-
+    private User user = User.getInstance(this);
     TextView playerPosition, playerDuration,corriger;
     SeekBar seekBar;
     ImageView btRew, btPlay, btPause, btFf;
@@ -65,11 +66,6 @@ public class DictationActivity extends AppCompatActivity {
         btFf = findViewById(R.id.bt_ff);
         corriger = findViewById(R.id.corriger);
         btn = findViewById(R.id.buttonCorrection);
-
-
-
-
-
 
        list.put(R.raw.dictee1, "Le cargo, avec ses flancs de fer profondément enfoncés dans l'eau " + "sous le poids de sa cargaison, roulait paresseusement sur ses ancres, au " + "large d'une petite île perdue dans l'océan. Les hommes d'équipage prenaient " + "un peu de repos. La veille, ils avaient affronté une terrible tempête. " + "Maintenant tout était calme. Le temps change très vite sous les tropiques, " + "seuls les excellents marins arrivent " + "à manœuvrer par gros temps.");
        list.put(R.raw.dictee2,"Quand le Monsieur le marquis ramenas à au château de Caylus sa belle madrilène long voilée, les ce fut une fièvre générale parmi les jeunes gentils hommes de la vallée de Louron. Il n'y avait point alors de touristes, ces lovelaces ambulants qui s'en vont incendier les cœurs de province partout où le train de plaisir favorise les voyages au rabais ! Mais la guerre permanente avec l'Espagne entretenait de nombreuses troupes de partisans à la frontière, et Monsieur le marquis n'avait qua se bien tenir.  Il se tint bien ; il accepta bravement la gageure. Le galant qui eût voulu tenter la conquête de la belle Inès aurait dû d'abord se munir de canons de siège.  Il ne s'agissait pas seulement d'un cœur : le cœur était à l'abri derrière les remparts d'une forteresse les tendres billets n'y pouvait rien…");
@@ -174,6 +170,7 @@ public class DictationActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 corriger.setText(correction);
+                addExperienceToUser();
             }
         });
 
@@ -194,6 +191,10 @@ public class DictationActivity extends AppCompatActivity {
                 ,TimeUnit.MILLISECONDS.toMinutes(duration)
                 ,TimeUnit.MILLISECONDS.toSeconds(duration) -
                 TimeUnit.MINUTES.toSeconds(TimeUnit.MILLISECONDS.toMinutes(duration)));
+    }
+
+    public void addExperienceToUser() {
+        user.addExperience(25);
     }
 
 }

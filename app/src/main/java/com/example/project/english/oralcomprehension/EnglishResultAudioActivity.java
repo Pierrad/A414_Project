@@ -16,11 +16,13 @@ import com.example.project.R;
 import com.example.project.english.EnglishDashboardActivity;
 import com.example.project.english.quizz.QuizzEntryAdapter;
 import com.example.project.english.quizz.QuizzEntrySimple;
+import com.example.project.user.User;
 
 import java.util.ArrayList;
 import java.util.Objects;
 
 public class EnglishResultAudioActivity extends AppCompatActivity {
+    private User user = User.getInstance(this);
     int score, percent;
 
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,6 +56,7 @@ public class EnglishResultAudioActivity extends AppCompatActivity {
             title.setText(getResources().getText(R.string.quizz_results_very_good));
         }
         subtitle.setText(getString(R.string.quizz_results_score, "" + (score), "" + audioEntries.size()));
+        addExperienceToUser();
 
         AudioEntryAdapter adapter = new AudioEntryAdapter(this, audioEntries);
         results.setAdapter(adapter);
@@ -62,5 +65,9 @@ public class EnglishResultAudioActivity extends AppCompatActivity {
     public void goBackToEnglishDashboard(View view) {
         Intent englishDashboard = new Intent(this, EnglishDashboardActivity.class);
         this.startActivity(englishDashboard);
+    }
+
+    public void addExperienceToUser() {
+        user.addExperience(percent);
     }
 }

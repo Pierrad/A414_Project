@@ -2,8 +2,7 @@ package com.example.project.user;
 
 import android.content.Context;
 import android.content.SharedPreferences;
-
-import com.example.project.R;
+import android.widget.Toast;
 
 public class User {
     private static User INSTANCE;
@@ -13,12 +12,11 @@ public class User {
     int avatar;
     int experience;
     int level;
-    int badge; // Will be a reference to an img
 
     private User(Context c) {
         this.context = c;
         initWithSharedParameters();
-        setLevelAndBadge();
+        setLevel();
     }
 
     public static User getInstance(Context c) {
@@ -54,6 +52,8 @@ public class User {
         this.avatar = avatar;
     }
 
+    public int getExperience() { return experience; }
+
     public void setExperience(int experience) {
         this.experience = experience;
     }
@@ -76,39 +76,6 @@ public class User {
         }
     }
 
-    public int getBadge() {
-        return badge;
-    }
-    /**
-    public void setBadge(int value) {
-        this.badge = value;
-    }
-
-    public void setBadge() {
-        switch(level) {
-            case 0:
-                setBadge(R.mipmap.rank_0);
-                break;
-            case 1:
-                setBadge(R.mipmap.rank_1);
-                break;
-            case 2:
-                setBadge(R.mipmap.rank_2);
-                break;
-            case 3:
-                setBadge(R.mipmap.rank_3);
-                break;
-            case 4:
-                setBadge(R.mipmap.rank_4);
-                break;
-        }
-    }
-**/
-    public void setLevelAndBadge() {
-        setLevel();
-        // setBadge();
-    }
-
     public void editSharedPreferences() {
         SharedPreferences sharedPreferences = context.getSharedPreferences("PersonalInfo", Context.MODE_PRIVATE);
         SharedPreferences.Editor myEdit = sharedPreferences.edit();
@@ -119,14 +86,18 @@ public class User {
     public void addExperience(float resultOfActivityInPercent) {
         if (resultOfActivityInPercent <= 25) {
             experience += 1;
+            Toast.makeText(context, "+1 point d'exp", Toast.LENGTH_SHORT).show();
         } else if (resultOfActivityInPercent > 25 && resultOfActivityInPercent <= 50) {
             experience += 2;
+            Toast.makeText(context, "+2 points d'exp", Toast.LENGTH_SHORT).show();
         } else if (resultOfActivityInPercent > 50 && resultOfActivityInPercent <= 80) {
             experience += 5;
+            Toast.makeText(context, "+5 points d'exp", Toast.LENGTH_SHORT).show();
         } else if (resultOfActivityInPercent > 80) {
             experience += 10;
+            Toast.makeText(context, "+10 points d'exp", Toast.LENGTH_SHORT).show();
         }
-        setLevelAndBadge();
+        setLevel();
         editSharedPreferences();
     }
 }
