@@ -82,6 +82,12 @@ public class QuizzActivity extends AppCompatActivity {
         toCheck.setChecked(true);
     }
 
+    public void uncheckAll() {
+        toggleA.setChecked(false);
+        toggleB.setChecked(false);
+        toggleC.setChecked(false);
+    }
+
     public void setTogglesListeners() {
         ArrayList<ToggleButton> toggles = new ArrayList<ToggleButton>();
         toggles.add(toggleA);
@@ -105,6 +111,7 @@ public class QuizzActivity extends AppCompatActivity {
 
     public void renderQuizzEntry(int quizzIndex) {
         title.setText(getString(R.string.quizz_entry_title, "" + (quizzIndex + 1), "" + quizzEntries.size()));
+        currentSelectedAnswer = "";
 
         QuizzEntry currentEntry = quizzEntries.get(quizzIndex);
         questionText.setText(currentEntry.getQuestion());
@@ -141,6 +148,7 @@ public class QuizzActivity extends AppCompatActivity {
         if (quizzIndex == quizzEntries.size()) {
             redirectToResultsActivity();
         } else {
+            uncheckAll();
             renderQuizzEntry(quizzIndex);
         }
     }

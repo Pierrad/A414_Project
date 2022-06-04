@@ -57,7 +57,7 @@ public class ResultActivity extends AppCompatActivity {
     }
 
     public void renderScore() {
-        int percentageScore = (score / entries.size()) * 100;
+        float percentageScore = (score * 100.0f) / entries.size() ;
         if (percentageScore < 40) {
             title.setText(getResources().getText(R.string.quizz_results_bad));
         } else if (percentageScore > 40 && percentageScore < 60) {

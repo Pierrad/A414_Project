@@ -10,6 +10,7 @@ import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 
+import com.example.project.DashboardActivity;
 import com.example.project.R;
 import com.example.project.history.activities.QuizzActivity;
 
@@ -32,6 +33,11 @@ public class HistoryDashboardActivity extends AppCompatActivity {
 
     public void startQuizz(View v) {
         Intent intent = new Intent(this, QuizzActivity.class);
+        this.startActivity(intent);
+    }
+
+    public void redirectToDashboard(View v) {
+        Intent intent = new Intent(this, DashboardActivity.class);
         this.startActivity(intent);
     }
 
