@@ -7,6 +7,17 @@ import java.util.ArrayList;
 import java.util.Collections;
 
 public class QuizzEntry implements Parcelable {
+    public static final Creator<QuizzEntry> CREATOR = new Creator<QuizzEntry>() {
+        @Override
+        public QuizzEntry createFromParcel(Parcel in) {
+            return new QuizzEntry(in);
+        }
+
+        @Override
+        public QuizzEntry[] newArray(int size) {
+            return new QuizzEntry[size];
+        }
+    };
     private String question;
     private String answer;
     private ArrayList<String> allShuffleAnswers;
@@ -18,6 +29,13 @@ public class QuizzEntry implements Parcelable {
 
         this.allShuffleAnswers.add(a);
         Collections.shuffle(this.allShuffleAnswers);
+    }
+
+    //----------- Parcelable logic -----------//
+    protected QuizzEntry(Parcel in) {
+        question = in.readString();
+        answer = in.readString();
+        allShuffleAnswers = in.createStringArrayList();
     }
 
     public String getQuestion() {
@@ -36,25 +54,6 @@ public class QuizzEntry implements Parcelable {
     public String toString() {
         return question + " -> " + answer;
     }
-
-    //----------- Parcelable logic -----------//
-    protected QuizzEntry(Parcel in) {
-        question = in.readString();
-        answer = in.readString();
-        allShuffleAnswers = in.createStringArrayList();
-    }
-
-    public static final Creator<QuizzEntry> CREATOR = new Creator<QuizzEntry>() {
-        @Override
-        public QuizzEntry createFromParcel(Parcel in) {
-            return new QuizzEntry(in);
-        }
-
-        @Override
-        public QuizzEntry[] newArray(int size) {
-            return new QuizzEntry[size];
-        }
-    };
 
     @Override
     public int describeContents() {

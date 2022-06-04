@@ -1,17 +1,16 @@
 package com.example.project.history.activities;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.content.ContextCompat;
-
 import android.content.Intent;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
-import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
 
 import com.example.project.R;
 import com.example.project.history.HistoryDashboardActivity;
@@ -43,7 +42,7 @@ public class ResultActivity extends AppCompatActivity {
         Window window = this.getWindow();
         window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
         window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
-        window.setStatusBarColor(ContextCompat.getColor(this,R.color.history));
+        window.setStatusBarColor(ContextCompat.getColor(this, R.color.history));
 
         Intent intent = getIntent();
         entries = intent.getParcelableArrayListExtra("quizzEntries");
@@ -62,7 +61,7 @@ public class ResultActivity extends AppCompatActivity {
     }
 
     public void renderScore() {
-        percentageScore = (score * 100.0f) / entries.size() ;
+        percentageScore = (score * 100.0f) / entries.size();
         if (percentageScore < 40) {
             title.setText(getResources().getText(R.string.quizz_results_bad));
         } else if (percentageScore > 40 && percentageScore < 60) {
