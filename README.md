@@ -4,15 +4,15 @@ Application permettant à des élèves de réviser.
 
 ## Répartition du travail
 
-- Bouzakri Wassim
+- Bouzakri Wassim - 8h de travail
     - Catégorie Français - Dictée
-- Coupet Joss 
+- Coupet Joss - 8h de travail
     - Catégorie Maths
-- Marchetti Marie-Eden
+- Marchetti Marie-Eden - 9h de travail 
     - Catégorie Anglais
-- Rocamora Enzo
+- Rocamora Enzo - 7h de travail
     - Catégorie Français - Grammaire, orthographe, vocabulaire
-- Vasseur Pierre-Adrien
+- Vasseur Pierre-Adrien - 11h de travail
     - Catégorie Histoire
     - LoginActivity / DashboardActivity / Utilisateur stocké dans les SharedPreferences avec gestion de l'expérience
     - Notification (tout les jours à 18h30)
