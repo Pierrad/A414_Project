@@ -16,5 +16,5 @@
     <string name="maths">Maths</string>
 
 
-    <string name="API_address">http://217.160.243.38:3210</string>
+    <string name="API_address">http://10.2.2.0:3210</string>
 </resources>
